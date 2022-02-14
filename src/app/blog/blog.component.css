@@ -1,0 +1,71 @@
+
+.blogs{
+    background: var(--light-bg);
+}
+
+.blogs .slide .image{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+.blogs .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blogs .slide .image span{
+    position: absolute;
+    bottom: -10rem; left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--black);
+    z-index: 2;
+}
+.blogs .slide:hover .image span{
+    bottom: 1rem;
+}
+.blogs .slide .image img{
+    transform: scale(1.1);
+}
+.blogs .slide .content{
+    padding: 2rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: .1rem solid #aaa;
+    margin-bottom: 4rem;
+}
+
+.blogs .slide .content .icon{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 1rem;
+}
+.blogs .slide .content .icon a{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.blogs .slide .content .icon a i{
+    padding-right: .7rem;
+    color: var(--peru);
+}
+
+.blogs .slide .content .icon a:hover{
+color: var(--peru);
+}
+.blogs .slide .content .title{
+      font-size: 2.5rem;
+      color: var(--black);
+}
+.blogs .slide .content .title:hover{
+    text-decoration: underline;
+}
+.blogs .slide .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-black);
+}

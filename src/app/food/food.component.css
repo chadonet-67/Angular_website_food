@@ -1,0 +1,96 @@
+
+ .food{
+    background: var(--light-bg);
+}
+.food .slide{
+    text-align: center;
+    padding: 3rem 2rem;
+    transform: scale(.9);
+    opacity: .5 ;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.food .slide img{
+     height: 25rem;
+     margin-bottom: 2rem;
+}
+.food .swiper-slide-active{
+   background: var(--white);
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+   transform: scale(1);
+   opacity: 1 ;
+}
+.swiper-pagination-bullets {
+   color: var(--peru);
+}
+.food .slide h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.food .slide .price{
+   font-size: 2.5rem;
+   color: var(--peru);
+}
+.food-preview-container{
+   background: rgba(0,0,0,.7);
+   position: fixed;
+   top: 0;left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 11000;
+   display: none;
+   align-items: center;
+   justify-content: center;
+
+}
+.food-preview-container .food-preview{
+   text-align: center;
+   background: var(--white);
+   padding: 3rem 2rem;
+   border-radius: .5rem;
+   display: none;
+   width: 35rem;
+}
+.food-preview-container .food-preview.active{
+   display: inline-block;
+}
+.food-preview-container .food-preview img{
+   height: 25rem;
+   margin-bottom: 1rem;
+}
+.food-preview-container .food-preview h3{
+   padding: 1rem 0;
+   font-size: 2.5rem;
+   color: var(--black);
+}
+.food-preview-container .food-preview .stars{
+   margin-top: 1rem;
+}
+.food-preview-container .food-preview .stars i{
+   font-size: 1.7rem;
+   color: var(--peru);
+}
+.food-preview-container .food-preview p{
+   font-size: 1.6rem;
+    color: var(--light-black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+.food-preview-container .food-preview  .price{
+   font-size: 2.5rem;
+   color: var(--black);
+   margin-bottom: .5rem;
+}
+#close-preview{
+    position: absolute;
+    top:2rem ;right: 2.5rem;
+    font-size: 6rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+#close-preview{
+    transform: rotate(180deg);
+}

@@ -1,0 +1,36 @@
+
+.galery .galery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.galery .galery-container .box{
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+.galery .galery-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.galery .galery-container .box .icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+}
+.galery .galery-container .box .icon i{
+    color: var(--white);
+    font-size: 6rem;
+}
+
+.galery .galery-container .box:hover .icon{
+    display: flex;
+}
